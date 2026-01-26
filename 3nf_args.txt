@@ -1,0 +1,6 @@
+I have been asked to bring forth arguments as to why my datamodel complies with the third normal form. The broad definition of
+3NF is that the model 1) does not have transitive dependency and 2) complies with the first and second normal form as well.
+In other words, the facts should be organized inside the datamodel in a way that minimizes reduncancy, facilitates and simplifies
+future changes to the tables, and actually represent the entities themselves.
+Some business rules in regards to what the model should contain did exist, and I have extracted the identifiable entities along
+with their attributes and built the model around it so it complies with all the other requirements as well.

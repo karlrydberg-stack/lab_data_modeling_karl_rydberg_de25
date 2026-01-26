@@ -2,6 +2,5 @@ SELECT
  s.first_name,
  co.course_name
 FROM student s
-LEFT JOIN class c ON s.class_id = c.class_id
-LEFT JOIN courseclass cc ON c.class_id = cc.class_id
-LEFT JOIN course co ON cc.course_id = co.course_id;
+INNER JOIN class c ON s.class_id = c.class_id
+LEFT JOIN course co ON c.class_id = co.class_id;
