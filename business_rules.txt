@@ -1,0 +1,29 @@
+'fast utbildare' = employee
+'utbildningsledare' = class manager
+'anläggning' = operation
+'känsliga personuppgifter' = classified
+
+- One operation is associated with one city
+- A city may be associated with zero or many operations
+- An operation offers one or more courses
+- A course is taught at one operation
+- A course may be associated with one program
+- A program has one or more courses
+- A course has one class
+- A class takes one or more courses
+- A class has one or more students
+- A class has one class manager
+- A class manager manages many (3) classes
+- A student is in one class
+- A course is taught by one educator
+- An educator teaches one or many courses
+- An educator is either one consultant or one employee (not inferred from cardinality alone)
+- A consultant is one educator
+- An employee is one educator
+- A consultant belongs to one consulting firm
+- A consulting firm employs one or many consultants
+- One social security number (classified) belongs to either 1)one employee 2)one consultant 3)one class manager 4)one student
+- An employee has one social security number
+- A student has one social security number
+- A consultant has one social security number
+- A class manager has one social security number

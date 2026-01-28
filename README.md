@@ -1,2 +1,1 @@
-# lab_data_modeling_karl_rydberg_de25
-
+# For implementation in postgres, add a .env with variables POSTGRES_USER, POSTGRES_PASSWORD, POSTGRES_DB and POSTGRES_PORT.
