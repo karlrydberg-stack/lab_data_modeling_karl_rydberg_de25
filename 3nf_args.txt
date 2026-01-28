@@ -2,5 +2,14 @@ I have been asked to bring forth arguments as to why my datamodel complies with 
 3NF is that the model 1) does not have transitive dependency and 2) complies with the first and second normal form as well.
 In other words, the facts should be organized inside the datamodel in a way that minimizes reduncancy, facilitates and simplifies
 future changes to the tables, and actually represent the entities themselves.
-Some business rules in regards to what the model should contain did exist, and I have extracted the identifiable entities along
-with their attributes and built the model around it so it complies with all the other requirements as well.
+As a baseline, I would argue that my model does comply with the first normal form since it is set up to only accept atomic
+values, and neither does any entity contain multiple similar attributes - which in part is enabled by the disposal of many-to-many
+relationships.
+As for the second normal form, each table in my model only contain one single-attribute primary key. And since 2NF is defined by
+the lack of partial dependencies, I would argue that my model does comply with 2NF in so far as the model also complies with 1NF.
+As for the third normal form, I have designed the model so that each entity accurately describes itself through its attributes,
+and thus, non-key attributes reliable depend on the primary key and not on any other non-key attributes. If this was not the case
+early in the modeling process then those attributes were moved to a different table entirely. For example, I could have included
+the company name and work address as attributes in the consultant table. But since those attributes depend more on eachother as
+consulting firm attributes, I decided to move them to a different table all together. And so I would argue that my model does
+comply with 3NF.

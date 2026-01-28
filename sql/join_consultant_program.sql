@@ -1,6 +1,6 @@
 SELECT
-c.first_name,
-p.program_name
+ c.first_name,
+ p.program_name
 FROM consultant c
 INNER JOIN educator e ON c.consultant_id = e.consultant_id
 INNER JOIN course co ON e.educator_id = co.educator_id
